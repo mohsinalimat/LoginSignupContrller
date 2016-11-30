@@ -21,5 +21,16 @@ class ViewController: UIViewController {
     }
 
 
+    let loginSignupLauncher = LoginSignupLauncher()
+    
+    func handleBtnPressed() {
+        // show login menu
+        loginSignupLauncher.showLoginSignupController()
+    }
+    
+    
+    @IBAction func loginSingUpBtnPressed(sender: UIButton) {
+        handleBtnPressed()
+    }
 }
 
