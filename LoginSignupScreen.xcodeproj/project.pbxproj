@@ -13,6 +13,8 @@
 		F3E6A2B71DEF55600055F292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E6A2B61DEF55600055F292 /* Assets.xcassets */; };
 		F3E6A2BA1DEF55600055F292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E6A2B81DEF55600055F292 /* LaunchScreen.storyboard */; };
 		F3E6A2C21DEF55A60055F292 /* LoginSignupLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6A2C11DEF55A60055F292 /* LoginSignupLauncher.swift */; };
+		F3E6A2C71DEF709B0055F292 /* LoginSignupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6A2C61DEF709B0055F292 /* LoginSignupCell.swift */; };
+		F3E6A2CA1DEF72590055F292 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6A2C91DEF72590055F292 /* BaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F3E6A2B91DEF55600055F292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3E6A2BB1DEF55600055F292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3E6A2C11DEF55A60055F292 /* LoginSignupLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupLauncher.swift; sourceTree = "<group>"; };
+		F3E6A2C61DEF709B0055F292 /* LoginSignupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupCell.swift; sourceTree = "<group>"; };
+		F3E6A2C91DEF72590055F292 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E6A2AF1DEF55600055F292 /* AppDelegate.swift */,
+				F3E6A2C81DEF72400055F292 /* Model */,
 				F3E6A2C51DEF55C40055F292 /* View */,
 				F3E6A2C31DEF55B20055F292 /* Controller */,
 				F3E6A2B31DEF55600055F292 /* Main.storyboard */,
@@ -79,8 +84,17 @@
 		F3E6A2C51DEF55C40055F292 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3E6A2C61DEF709B0055F292 /* LoginSignupCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F3E6A2C81DEF72400055F292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3E6A2C91DEF72590055F292 /* BaseCell.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,8 @@
 				F3E6A2B21DEF55600055F292 /* ViewController.swift in Sources */,
 				F3E6A2B01DEF55600055F292 /* AppDelegate.swift in Sources */,
 				F3E6A2C21DEF55A60055F292 /* LoginSignupLauncher.swift in Sources */,
+				F3E6A2CA1DEF72590055F292 /* BaseCell.swift in Sources */,
+				F3E6A2C71DEF709B0055F292 /* LoginSignupCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

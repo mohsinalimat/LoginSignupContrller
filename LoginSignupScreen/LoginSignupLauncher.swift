@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginSignupLauncher: NSObject {
+class LoginSignupLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let blackView = UIView()
     
@@ -18,6 +18,9 @@ class LoginSignupLauncher: NSObject {
         cv.backgroundColor = UIColor.white
         return cv
     }()
+    
+    let cellId = "cellId"
+    
     
     func showLoginSignupController() {
         // show login menu
@@ -61,9 +64,28 @@ class LoginSignupLauncher: NSObject {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 50)
+    }
+    
     
     
     override init() {
         super.init()
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        collectionView.register(LoginSignupCell.self, forCellWithReuseIdentifier: cellId)
     }
 }
